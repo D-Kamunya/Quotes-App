@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { QuotesAppDisplayComponent } from './quotes-app-display/quotes-app-display.component';
 import { QuotesAppFormComponent } from './quotes-app-form/quotes-app-form.component';
 import { QuotesAppHeaderComponent } from './quotes-app-header/quotes-app-header.component';
+import { QuotesAppFooterComponent } from './quotes-app-footer/quotes-app-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesAppDisplayComponent,
     QuotesAppFormComponent,
-    QuotesAppHeaderComponent
+    QuotesAppHeaderComponent,
+    QuotesAppFooterComponent
   ],
   imports: [
     BrowserModule,
