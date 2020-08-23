@@ -7,6 +7,7 @@ import { QuotesAppDisplayComponent } from './quotes-app-display/quotes-app-displ
 import { QuotesAppFormComponent } from './quotes-app-form/quotes-app-form.component';
 import { QuotesAppHeaderComponent } from './quotes-app-header/quotes-app-header.component';
 import { QuotesAppFooterComponent } from './quotes-app-footer/quotes-app-footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { QuotesAppFooterComponent } from './quotes-app-footer/quotes-app-footer.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
