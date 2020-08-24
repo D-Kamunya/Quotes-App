@@ -1,16 +1,16 @@
 <div class="container text-white mt-4 mb-4 text-center">
-  <form>
+  <form #quoteForm="ngForm" name="quoteForm">
     <div class="form-group">
       <label for="quoteSubmitter">Quote Submitter</label>
-      <input type="text" class="form-control" id="quoteSubmitter" placeholder="Quote Submitter">
+      <input type="text" class="form-control" id="quoteSubmitter" name="quoteSubmitter" #quoteSubmitter='ngModel' [(ngModel)]="newQuote.quoteSubmitter"  placeholder="Quote Submitter">
     </div>
     <div class="form-group">
       <label for="quoteAuthor">Quote Author</label>
-      <input type="text" class="form-control" id="quoteAuthor" placeholder="Quote Author">
+      <input type="text" class="form-control" id="quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" [(ngModel)]="newQuote.quoteAuthor" placeholder="Quote Author">
     </div>
     <div class="form-group">
       <label for="quoteText">Quote Text</label>
-      <textarea class="form-control" id="quoteText" rows="1" placeholder="Quote Text"></textarea>
+      <textarea class="form-control" id="quoteText" rows="1" name="quoteText" #quoteText="ngModel"  [(ngModel)]="newQuote.quoteText" placeholder="Quote Text"></textarea>
     </div>
     <button type="submit" class="btn btn-success ">Add Quote</button>
   </form>
