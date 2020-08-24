@@ -8,6 +8,7 @@ import { QuotesAppFormComponent } from './quotes-app-form/quotes-app-form.compon
 import { QuotesAppHeaderComponent } from './quotes-app-header/quotes-app-header.component';
 import { QuotesAppFooterComponent } from './quotes-app-footer/quotes-app-footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { QuoteTextComponent } from './quote-text/quote-text.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     QuotesAppDisplayComponent,
     QuotesAppFormComponent,
     QuotesAppHeaderComponent,
-    QuotesAppFooterComponent
+    QuotesAppFooterComponent,
+    QuoteTextComponent
   ],
   imports: [
     BrowserModule,
