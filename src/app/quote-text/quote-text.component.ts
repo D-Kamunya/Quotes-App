@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { from } from 'rxjs';
+import {Quote} from '../quote'
 
 @Component({
   selector: 'app-quote-text',
@@ -11,5 +13,7 @@ export class QuoteTextComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input () quote:Quote
 
 }
