@@ -1,0 +1,12 @@
+.form-control{
+  background-color: transparent;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid white;
+}
+.form-control::placeholder {
+	color: rgb(236, 226, 226);
+}
+textarea:focus,input:focus{
+  border:none
+}
