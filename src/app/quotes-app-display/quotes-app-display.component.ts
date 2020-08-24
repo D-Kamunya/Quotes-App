@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-quotes-app-display',
   templateUrl: './quotes-app-display.component.html',
@@ -12,4 +13,5 @@ export class QuotesAppDisplayComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

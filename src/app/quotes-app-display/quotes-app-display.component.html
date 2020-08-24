@@ -1,2 +1,31 @@
-<p>quotes-app-display works!</p>
-<app-quotes-app-form></app-quotes-app-form>
+<div class="container-fluid mt-4">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper border border-info">
+      </div>
+      <div class="carousel-caption">
+        <div class="card border-0">
+          <div class="card-title">
+            <h3>Quote by : Dennis Kamunya</h3>
+            <small>1 years ago</small>
+          </div>
+          
+          <div class="card-body quote-text">
+            <cite><em>“First, solve the problem. Then, write the code.”  </em><br> – John Johnson</cite>
+            <div class="card-footer">
+              <button class="btn btn-primary mr-2" type="button"><i class="fa fa-thumbs-up  fa-sm"></i> 0</button>
+              <button class="btn btn-primary mr-2" type="button"><i class="fa fa-thumbs-down fa-sm"></i> 0</button>
+              <button class="btn btn-primary mr-2" type="button"><i class="fa fa-trash fa-sm"></i></button>
+            </div>
+          </div>
+        
+
+        </div>
+        
+      </div>
+    </ng-template>
+
+  </ngb-carousel>
+  <app-quotes-app-form></app-quotes-app-form>
+</div>
+

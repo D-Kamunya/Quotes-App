@@ -1,0 +1,17 @@
+.carousel-caption{
+top: 20%;
+}
+.picsum-img-wrapper{
+  height: 80vh;
+  width: 100%;
+}
+.card{
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-text{
+color: #000;
+}
+button{
+  background-color: rgba(0, 0, 0, 0.1);
+}
