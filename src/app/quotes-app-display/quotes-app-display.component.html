@@ -7,7 +7,7 @@
         <div class="card border-0">
           <div class="card-title">
             <h3>Quote by : {{quote.quoteAuthor}}</h3>
-            <small>1 years ago</small>
+            <small>{{quote.quoteDate}}</small>
           </div>
           <button class="icon btn-info" type="button" (click)="toggleQuoteText(i)"><i *ngIf="!quote.showQuoteText" class="fa fa-angle-down"></i><i *ngIf="quote.showQuoteText" class="fa fa-angle-up"></i></button>
           <app-quote-text *ngIf="quote.showQuoteText" [quote]="quote"></app-quote-text>
