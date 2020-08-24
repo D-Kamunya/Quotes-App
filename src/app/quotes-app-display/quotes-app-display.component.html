@@ -7,7 +7,7 @@
         <div class="card border-0">
           <div class="card-title">
             <h3>Submitted by : {{quote.quoteSubmitter}}</h3>
-            <small>{{quote.quoteDate}}</small>
+            <small>{{quote.quoteDate | timeAgo}} </small>
           </div>
           <button class="icon btn-info" type="button" (click)="toggleQuoteText(i)"><i *ngIf="!quote.showQuoteText" class="fa fa-angle-down"></i><i *ngIf="quote.showQuoteText" class="fa fa-angle-up"></i></button>
           <app-quote-text *ngIf="quote.showQuoteText" [quote]="quote" (quoteDelete)="delQuote($event,i)"></app-quote-text>

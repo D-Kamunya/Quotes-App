@@ -9,7 +9,8 @@ import { QuotesAppHeaderComponent } from './quotes-app-header/quotes-app-header.
 import { QuotesAppFooterComponent } from './quotes-app-footer/quotes-app-footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuoteTextComponent } from './quote-text/quote-text.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { TimeAgoPipe } from './time-ago.pipe'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FormsModule} from '@angular/forms'
     QuotesAppFormComponent,
     QuotesAppHeaderComponent,
     QuotesAppFooterComponent,
-    QuoteTextComponent
+    QuoteTextComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
