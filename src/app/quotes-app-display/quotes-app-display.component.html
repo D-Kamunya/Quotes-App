@@ -1,6 +1,6 @@
 <div class="container-fluid mt-4">
-  <ngb-carousel  >
-    <ng-template ngbSlide *ngFor="let quote of quotes;let i=index">
+  <ngb-carousel [interval]="2000">
+    <ng-template  ngbSlide *ngFor="let quote of quotes;let i=index">
       <div class="picsum-img-wrapper border border-info">
       </div>
       <div class="carousel-caption">
