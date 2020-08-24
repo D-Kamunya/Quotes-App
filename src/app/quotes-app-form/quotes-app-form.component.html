@@ -1,5 +1,5 @@
 <div class="container text-white mt-4 mb-4 text-center">
-  <form #quoteForm="ngForm" name="quoteForm">
+  <form (ngSubmit)='submitQuote()' #quoteForm="ngForm" name="quoteForm">
     <div class="form-group">
       <label for="quoteSubmitter">Quote Submitter</label>
       <input type="text" class="form-control" id="quoteSubmitter" name="quoteSubmitter" #quoteSubmitter='ngModel' [(ngModel)]="newQuote.quoteSubmitter"  placeholder="Quote Submitter">

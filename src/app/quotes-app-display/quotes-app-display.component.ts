@@ -27,5 +27,15 @@ export class QuotesAppDisplayComponent implements OnInit {
       this.quotes.splice(index,1)
     }
   }
+
+  addQuote(newquote:Quote){
+    
+    let quoteId=this.quotes.length+1
+    newquote.id=quoteId
+    newquote.quoteDate=new Date()
+
+    console.log(newquote);
+    
+  }
   
 }
