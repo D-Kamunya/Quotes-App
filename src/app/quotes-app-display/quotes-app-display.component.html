@@ -9,7 +9,8 @@
             <h3>Quote by : {{quote.quoteAuthor}}</h3>
             <small>1 years ago</small>
           </div>
-          <app-quote-text [quote]="quote"></app-quote-text>
+          <button class="icon btn-info" type="button" (click)="toggleQuoteText(i)"><i *ngIf="!quote.showQuoteText" class="fa fa-angle-down"></i><i *ngIf="quote.showQuoteText" class="fa fa-angle-up"></i></button>
+          <app-quote-text *ngIf="quote.showQuoteText" [quote]="quote"></app-quote-text>
         </div>
       </div>
     </ng-template>

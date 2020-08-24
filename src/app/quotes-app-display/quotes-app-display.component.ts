@@ -18,5 +18,12 @@ export class QuotesAppDisplayComponent implements OnInit {
     new Quote(1,'Dennis Kamunya','Tupac Shakur','You know its funny when it rains it pours They got money for wars, but cant feed the poor.',new Date()),
     new Quote(1,'Spicy Dee','Notorious Biggie','Stay far from timid, only make moves when your heart’s in it, and live the phrase ‘sky’s the limit.',new Date())
   ]
+
+  showQuoteIcon:string='angle-down'
+
+  toggleQuoteText(index){
+    this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
+    this.showQuoteIcon='angle-up'
+  }
   
 }
