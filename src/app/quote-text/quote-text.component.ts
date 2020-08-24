@@ -15,10 +15,13 @@ export class QuoteTextComponent implements OnInit {
   }
 
   @Input () quote:Quote
-  @Output () isLike=new EventEmitter<boolean>()
-
-  upVote(ans){
-    this.isLike.emit(ans)
+ 
+  voteQuote(event){
+    if(event==='up'){
+      this.quote.upVotes+=1
+    }else if(event==='down'){
+      this.quote.downVotes+=1
+    }
   }
 
 }
