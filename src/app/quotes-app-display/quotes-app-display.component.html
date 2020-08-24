@@ -6,7 +6,7 @@
       <div class="carousel-caption">
         <div class="card border-0">
           <div class="card-title">
-            <h3>Quote by : {{quote.quoteSubmitter}}</h3>
+            <h3>Submitted by : {{quote.quoteSubmitter}}</h3>
             <small>{{quote.quoteDate}}</small>
           </div>
           <button class="icon btn-info" type="button" (click)="toggleQuoteText(i)"><i *ngIf="!quote.showQuoteText" class="fa fa-angle-down"></i><i *ngIf="quote.showQuoteText" class="fa fa-angle-up"></i></button>
