@@ -1,12 +1,12 @@
 <div class="container-fluid mt-4">
-  <ngb-carousel>
-    <ng-template ngbSlide>
+  <ngb-carousel  >
+    <ng-template ngbSlide *ngFor="let quote of quotes;let i=index">
       <div class="picsum-img-wrapper border border-info">
       </div>
       <div class="carousel-caption">
         <div class="card border-0">
           <div class="card-title">
-            <h3>Quote by : Dennis Kamunya</h3>
+            <h3>Quote by : {{quote.quoteAuthor}}</h3>
             <small>1 years ago</small>
           </div>
           <app-quote-text></app-quote-text>
