@@ -34,7 +34,7 @@ export class QuotesAppDisplayComponent implements OnInit {
     newquote.id=quoteId
     newquote.quoteDate=new Date()
 
-    console.log(newquote);
+    this.quotes.push(newquote)
     
   }
   
