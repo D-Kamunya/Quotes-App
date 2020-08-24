@@ -10,7 +10,7 @@
             <small>{{quote.quoteDate}}</small>
           </div>
           <button class="icon btn-info" type="button" (click)="toggleQuoteText(i)"><i *ngIf="!quote.showQuoteText" class="fa fa-angle-down"></i><i *ngIf="quote.showQuoteText" class="fa fa-angle-up"></i></button>
-          <app-quote-text *ngIf="quote.showQuoteText" [quote]="quote"></app-quote-text>
+          <app-quote-text *ngIf="quote.showQuoteText" [quote]="quote" (isLike)='likeQuote($event,i)'></app-quote-text>
         </div>
       </div>
     </ng-template>

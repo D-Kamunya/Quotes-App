@@ -22,5 +22,11 @@ export class QuotesAppDisplayComponent implements OnInit {
   toggleQuoteText(index){
     this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
   }
+
+  likeQuote(event,index){
+    if(event){
+      this.quotes[index].upVotes+=1
+    }
+  }
   
 }

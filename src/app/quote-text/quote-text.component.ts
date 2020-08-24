@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { from } from 'rxjs';
 import {Quote} from '../quote'
 
@@ -15,5 +15,10 @@ export class QuoteTextComponent implements OnInit {
   }
 
   @Input () quote:Quote
+  @Output () isLike=new EventEmitter<boolean>()
+
+  upVote(ans){
+    this.isLike.emit(ans)
+  }
 
 }
