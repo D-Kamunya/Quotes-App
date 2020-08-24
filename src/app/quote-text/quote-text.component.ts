@@ -15,6 +15,7 @@ export class QuoteTextComponent implements OnInit {
   }
 
   @Input () quote:Quote
+  @Output () quoteDelete=new EventEmitter<boolean>()
  
   voteQuote(event){
     if(event==='up'){
@@ -22,6 +23,14 @@ export class QuoteTextComponent implements OnInit {
     }else if(event==='down'){
       this.quote.downVotes+=1
     }
-  }
+  }  
+
+    delQuote(){
+      if(confirm('Are you sure you want to delete?')){
+        this.quoteDelete.emit(true)
+      }else{
+        this.quoteDelete.emit(false)
+      }
+    }
 
 }

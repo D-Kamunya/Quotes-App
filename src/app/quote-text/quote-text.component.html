@@ -3,6 +3,6 @@
   <div class="card-footer">
     <button class="btn btn-primary mr-2" type="button" (click)="voteQuote('up')"><i class="fa fa-thumbs-up  fa-sm"></i> {{quote.upVotes}}</button>
     <button class="btn btn-primary mr-2" type="button" (click)="voteQuote('down')"><i class="fa fa-thumbs-down fa-sm"></i> {{quote.downVotes}}</button>
-    <button class="btn btn-primary mr-2" type="button"><i class="fa fa-trash fa-sm"></i></button>
+    <button class="btn btn-primary mr-2" type="button" (click)="delQuote()"><i class="fa fa-trash fa-sm"></i></button>
   </div>
 </div>
