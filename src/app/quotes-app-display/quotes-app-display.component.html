@@ -1,4 +1,4 @@
-<div class="container-fluid mt-4">
+<div class="container-fluid mt-4" style="width: 100%;">
   <ngb-carousel [interval]="2000">
     <ng-template  ngbSlide *ngFor="let quote of quotes;let i=index">
       <div class="picsum-img-wrapper border border-info">
@@ -15,6 +15,11 @@
       </div>
     </ng-template>
   </ngb-carousel>
-  <app-quotes-app-form (quoteAdd)="addQuote($event)"></app-quotes-app-form>
+
+  <div class="text-center">
+    <button *ngIf="!showQuoteForm" (click)="toggleQuoteForm()" class="btn btn-success m-5"><i class="fa fa-plus-circle fa-lg"></i> ADD QUOTE</button>
+    <button *ngIf="showQuoteForm" (click)="toggleQuoteForm()"  class="btn btn-success m-5"><i class="fa fa-minus-circle fa-lg"></i> HIDE FORM</button>
+  </div>
+  <app-quotes-app-form *ngIf="showQuoteForm" (quoteAdd)="addQuote($event)"></app-quotes-app-form>
 </div>
 

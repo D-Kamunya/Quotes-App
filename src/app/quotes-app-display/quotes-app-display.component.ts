@@ -9,10 +9,15 @@ import {Quote} from '../quote'
 })
 export class QuotesAppDisplayComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
+  
   }
+
+  showQuoteForm:boolean=false
 
   quotes:Quote[]=[
     new Quote(0,'Dennis Kamunya','Tupac Shakur','You know its funny when it rains it pours They got money for wars, but cant feed the poor.',0,0,new Date()),
@@ -21,6 +26,9 @@ export class QuotesAppDisplayComponent implements OnInit {
 
   toggleQuoteText(index){
     this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
+  }
+  toggleQuoteForm(){
+    this.showQuoteForm=! this.showQuoteForm
   }
   delQuote(event,index){
     if(event){
