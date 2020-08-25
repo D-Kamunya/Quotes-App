@@ -3,6 +3,8 @@
 ####  An angular web application which allows users to post and rate their favourite quotes.
 ![alt text](src/assets/scs/app1.png)
 
+![alt text](src/assets/scs/app3.png)
+
 ![alt text](src/assets/scs/app2.png)
 ## Author
 [Dennis Kamunya](https://github.com/D-Kamunya)
@@ -11,7 +13,7 @@
 Quote App V1.0
 
 ## Description
-A web application which allows users to add their quotes. The user can see posts from other users and can either upvote , downvote ,or delete the quote
+A web application which allows users to add their quotes. The user can see posts from other users and can either upvote , downvote ,or delete the quote.The app also highlights the quote with the highest upvote by adding a yellow background
 The link to the live site is https://d-kamunya.github.io/Quotes-App/
 ## Features
 Here are the features in summary:

@@ -19,15 +19,17 @@ export class QuotesAppDisplayComponent implements OnInit {
 
   showQuoteForm:boolean=false
 
+  //quotes array with type Quote class
   quotes:Quote[]=[
     new Quote(0,'Dennis Kamunya','Tupac Shakur','You know its funny when it rains it pours They got money for wars, but cant feed the poor.',2,0,new Date('2020,08,09')),
     new Quote(1,'Spicy Dee','Notorious Biggie','Stay far from timid, only make moves when your heart’s in it, and live the phrase ‘sky’s the limit.',5,0,new Date('2019,10,21'))
   ]
 
-  counter:number;
+
+  //variable to hold highest upvote value
   highVote:number;
+  //Fn to calculate quote with highest upvote
   getHighestVote(){
-    this.counter=0
     this.highVote=0
 
     this.quotes.forEach(quote=>{
