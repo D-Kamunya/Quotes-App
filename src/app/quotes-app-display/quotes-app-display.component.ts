@@ -14,15 +14,29 @@ export class QuotesAppDisplayComponent implements OnInit {
    }
 
   ngOnInit(): void {
-  
+     
   }
 
   showQuoteForm:boolean=false
 
   quotes:Quote[]=[
-    new Quote(0,'Dennis Kamunya','Tupac Shakur','You know its funny when it rains it pours They got money for wars, but cant feed the poor.',0,0,new Date('2020,08,09')),
-    new Quote(1,'Spicy Dee','Notorious Biggie','Stay far from timid, only make moves when your heart’s in it, and live the phrase ‘sky’s the limit.',0,0,new Date('2019,10,21'))
+    new Quote(0,'Dennis Kamunya','Tupac Shakur','You know its funny when it rains it pours They got money for wars, but cant feed the poor.',2,0,new Date('2020,08,09')),
+    new Quote(1,'Spicy Dee','Notorious Biggie','Stay far from timid, only make moves when your heart’s in it, and live the phrase ‘sky’s the limit.',5,0,new Date('2019,10,21'))
   ]
+
+  counter:number;
+  highVote:number;
+  getHighestVote(){
+    this.counter=0
+    this.highVote=0
+
+    this.quotes.forEach(quote=>{
+      if(quote.upVotes > this.highVote){
+        this.highVote = quote.upVotes
+      }
+    })
+   return this.highVote
+  }
 
   toggleQuoteText(index){
     this.quotes[index].showQuoteText=!this.quotes[index].showQuoteText
@@ -45,5 +59,8 @@ export class QuotesAppDisplayComponent implements OnInit {
     this.quotes.push(newquote)
     
   }
+
+  
+  
   
 }

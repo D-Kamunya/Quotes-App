@@ -10,8 +10,6 @@ export class TimeAgoPipe implements PipeTransform {
       var dateDifference = today-+value//returns value in miliseconds
       var dateDifferenceSeconds = Math.floor(dateDifference*0.001) //converts miliseconds to seconds
       
-      console.log(dateDifferenceSeconds);
-      
       // less than 30 seconds ago will show as 'Just now'
       if (dateDifferenceSeconds < 30){
         return 'Just now';
@@ -31,7 +29,6 @@ export class TimeAgoPipe implements PipeTransform {
       //loop through intervals dividing them with secs
       for (const i in timeIntervals) {
           counter = Math.floor(dateDifferenceSeconds / timeIntervals[i]);
-          console.log("Counter is "+ counter);
           if (counter > 0){
             if (counter === 1) {
               // singular (1 day ago)

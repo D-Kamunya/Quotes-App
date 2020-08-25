@@ -10,7 +10,8 @@ import { QuotesAppFooterComponent } from './quotes-app-footer/quotes-app-footer.
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuoteTextComponent } from './quote-text/quote-text.component';
 import {FormsModule} from '@angular/forms';
-import { TimeAgoPipe } from './time-ago.pipe'
+import { TimeAgoPipe } from './time-ago.pipe';
+import { HgUpvotesDirective } from './hg-upvotes.directive'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TimeAgoPipe } from './time-ago.pipe'
     QuotesAppHeaderComponent,
     QuotesAppFooterComponent,
     QuoteTextComponent,
-    TimeAgoPipe
+    TimeAgoPipe,
+    HgUpvotesDirective
   ],
   imports: [
     BrowserModule,
